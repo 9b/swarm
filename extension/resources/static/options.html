@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="options_page">
+
+<head>
+    <title>Swarm Options</title>
+    <link rel="stylesheet" href="../external/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/options.css">
+    <script src="../external/jquery.js"></script>
+    <script src="../external/bootstrap.min.js"></script>
+    <script src="../js/core/utils.js"></script>
+    <style>
+        #status {
+            float: left;
+            padding-top: 7px;
+            font-weight: bold;
+        }
+
+        #image {
+            padding-left: 15px;
+            margin-bottom: -15px;
+            margin-top: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body class="options_page">
+    <div id="wrapper">
+        <img id="image" src="../ico/128.png"/><span class="h1">Swarm</span>
+        <div id="options">
+            <fieldset id="format">
+                <legend><span id="serverUrl">Configuration</span></legend>
+                <label class="on" for="">Server</label>
+                <input type="text" width="100%" id="cfg_server" placeholder="Server Host"><br><br>
+                <legend><span id="debugMode">Debug Mode</span></legend>
+                <input id="debug" type="radio" name="cfg_debug" value="true">
+                <label class="on" for="">On</label>
+                <input id="debug" type="radio" name="cfg_debug" value="false" checked>
+                <label class="off" for="">Off</label>
+                <br><br>
+
+                <div id="error_message"></div>
+            </fieldset>
+
+        </div>
+
+        <div id="action_panel">
+            <div id="status"></div>
+            <button id="save" type="button" class="btn btn-primary">Save</button>
+        </div>
+        <script src="../js/local/options.js"></script>
+    </div>
+</body>
+
+</html>
